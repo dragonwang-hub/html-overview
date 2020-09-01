@@ -11,6 +11,45 @@
     <!--table已经添加default 样式，只需完成HTML-->
     <!--合理使用table, thead, tbody, tfoot, tr, th, td标签-->
     <!--合理使用colspan, rowspan属性-->
-
+    <table>
+        <thead>
+            <th colspan="2"></th>
+            <th scope="col">Column1</th>         
+            <th scope="col">Column2</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Row1</th>
+                <th scope="row">Row1-1</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Row1-2</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Row1-3</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2" scope="row">Row2</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2" scope="row">Row3</th>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Footer</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
